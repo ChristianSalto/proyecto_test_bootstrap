@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!-- Esto es una prueba de web component -->
+    <!--   
+        <script src="./component/tabs.js"></script> 
+        <tabs-tabs></tabs-tabs> 
+    -->
+    <header class="text-center mb-5">
+      <h1>Componentes de bootstrap 5</h1>
+      <hr>
+    </header>
+    
+    <main class="p-6">
+      <div class="row list">
+        <div class="col col-lg-2">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-accordion-list" data-bs-toggle="list" href="#list-accordion" role="tab" aria-controls="list-accordion">Accordion</a>
+            <a class="list-group-item list-group-item-action" id="list-alerts-list" data-bs-toggle="list" href="#list-alerts" role="tab" aria-controls="list-alerts">Alerts</a>
+            <a class="list-group-item list-group-item-action" id="list-badge-list" data-bs-toggle="list" href="#list-badge" role="tab" aria-controls="list-badge">Badge</a>
+            <a class="list-group-item list-group-item-action" id="list-breadcrumb-list" data-bs-toggle="list" href="#list-breadcrumb" role="tab" aria-controls="list-breadcrumb">Breadcrumb</a>
+            <a class="list-group-item list-group-item-action" id="list-buttons-list" data-bs-toggle="list" href="#list-buttons" role="tab" aria-controls="list-buttons">Buttons</a>
+            <a class="list-group-item list-group-item-action" id="list-button-group-list" data-bs-toggle="list" href="#list-button-group" role="tab" aria-controls="list-button-group">Button group</a>
+            <a class="list-group-item list-group-item-action" id="list-card-list" data-bs-toggle="list" href="#list-card" role="tab" aria-controls="list-card">Card</a>
+            <a class="list-group-item list-group-item-action" id="list-carousel-list" data-bs-toggle="list" href="#list-carousel" role="tab" aria-controls="list-carousel">Carousel</a>
+            <a class="list-group-item list-group-item-action" id="list-close-button-list" data-bs-toggle="list" href="#list-close-button" role="tab" aria-controls="list-close-button">Close button</a>
+            <a class="list-group-item list-group-item-action" id="list-collapse-list" data-bs-toggle="list" href="#list-collapse" role="tab" aria-controls="list-collapse">Collapse</a>
+            <a class="list-group-item list-group-item-action" id="list-dropdowns-list" data-bs-toggle="list" href="#list-dropdowns" role="tab" aria-controls="list-dropdowns">Dropdowns</a>
+            <a class="list-group-item list-group-item-action" id="list-group-list" data-bs-toggle="list" href="#list-group" role="tab" aria-controls="list-group">List group</a>
+          </div>
+        </div>
+        <div class="col-9 tabs p-5">
+          <div class="tab-content" id="nav-tabContent">
+
+            <!-- ACORDEON -->
+            <div class="tab-pane fade show active" id="list-accordion" role="tabpanel" aria-labelledby="list-home-list">
+              <section>
+                <h2>Accordion</h2> 
+                <article>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </article>
+              </section>          
+            </div>
+
+
+            <!--  ALERTS   -->
+
+            <div class="tab-pane fade" id="list-alerts" role="tabpanel" aria-labelledby="list-profile-list">
+              <section>
+                <h2>Alerts</h2>
+                <article>
+                  <div class="alert alert-primary" role="alert">
+                    A simple primary alert—check it out!
+                  </div>
+                  <div class="alert alert-secondary" role="alert">
+                    A simple secondary alert—check it out!
+                  </div>
+                  <div class="alert alert-success" role="alert">
+                    A simple success alert—check it out!
+                  </div>
+                  <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                  </div>
+                  <div class="alert alert-warning" role="alert">
+                    A simple warning alert—check it out!
+                  </div>
+                  <div class="alert alert-info" role="alert">
+                    A simple info alert—check it out!
+                  </div>
+                  <div class="alert alert-light" role="alert">
+                    A simple light alert—check it out!
+                  </div>
+                  <div class="alert alert-dark" role="alert">
+                    A simple dark alert—check it out!
+                  </div>
+                </article>
+              </section>
+            </div>
+
+
+
+
+            <div class="tab-pane fade" id="list-badge" role="tabpanel" aria-labelledby="list-messages-list">Badge</div>
+            <div class="tab-pane fade" id="list-breadcrumb" role="tabpanel" aria-labelledby="list-settings-list">Breadcrumb</div>
+            <div class="tab-pane fade" id="list-buttons" role="tabpanel" aria-labelledby="list-home-list">Buttons</div>
+            <div class="tab-pane fade" id="list-button-group" role="tabpanel" aria-labelledby="list-profile-list">Button group</div>
+            <div class="tab-pane fade" id="list-card" role="tabpanel" aria-labelledby="list-messages-list">Card</div>
+            <div class="tab-pane fade" id="list-carousel" role="tabpanel" aria-labelledby="list-settings-list">Carousel</div>
+            <div class="tab-pane fade" id="list-close-button" role="tabpanel" aria-labelledby="list-home-list">Close button</div>
+            <div class="tab-pane fade" id="list-collapse" role="tabpanel" aria-labelledby="list-profile-list">Collapse</div>
+            <div class="tab-pane fade" id="list-dropdowns" role="tabpanel" aria-labelledby="list-messages-list">Dropdowns</div>
+            <div class="tab-pane fade" id="list-group" role="tabpanel" aria-labelledby="list-settings-list">List group</div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/popper.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  </body>
+</html>
