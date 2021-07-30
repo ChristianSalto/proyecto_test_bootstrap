@@ -432,3 +432,34 @@ $alert-border-scale: -70%;
 $alert-color-scale: 40%;
 $alert-dismissible-padding-r: $alert-padding-x * 3; // 3x covers width of x plus default padding on either side
 // scss-docs-end alert-variables
+
+
+
+// Badges
+
+// scss-docs-start badge-variables
+$badge-font-size:                   1em;
+$badge-font-weight:                 $font-weight-bold;
+$badge-color:                       $white;
+$badge-padding-y:                   .35em;
+$badge-padding-x:                   .65em;
+$badge-border-radius:               $border-radius;
+// scss-docs-end badge-variables
+
+
+
+// Breadcrumbs
+
+// scss-docs-start breadcrumb-variables
+$breadcrumb-font-size:              null;
+$breadcrumb-padding-y:              0;
+$breadcrumb-padding-x:              0;
+$breadcrumb-item-padding-x:         .5rem;
+$breadcrumb-margin-bottom:          1rem;
+$breadcrumb-bg:                     null;
+$breadcrumb-divider-color:          $gray-600;
+$breadcrumb-active-color:           $gray-600;
+$breadcrumb-divider:                quote("/");
+$breadcrumb-divider-flipped:        $breadcrumb-divider;
+$breadcrumb-border-radius:          null;
+// scss-docs-end breadcrumb-variables
