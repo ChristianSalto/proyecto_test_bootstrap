@@ -5,7 +5,7 @@ var sass = require('gulp-sass')(require('sass'));
 scssTask = () => {
   return src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
     .pipe(sass({ outputStyle: 'compressed' }))
-    .pipe(dest('src/css'));
+    .pipe(dest('src/dist/css'));
   // .pipe(browserSync.stream());
 };
 
@@ -14,13 +14,13 @@ jsTask = () => {
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/@popperjs/core/dist/umd/popper.min.js',
-  ]).pipe(dest('src/js'));
+  ]).pipe(dest('src/dist/js'));
   // .pipe(browserSync.stream());
 };
 
 fontAwesome = () => {
   return src('node_modules/font-awesome/css/font-awesome.min.css').pipe(
-    dest('src/css'),
+    dest('src/dist/css'),
   );
 };
 
@@ -49,7 +49,7 @@ watchTask = () => {
   // 	series(browsersyncReload)
   // });
   watch(
-    ['src/scss/*.scss', 'src/js/*.js', 'src/*.html'],
+    ['src/scss/*.scss', 'src/js/**/*.js', 'src/*.html'],
     series(scssTask, browsersyncReload),
   );
 };
