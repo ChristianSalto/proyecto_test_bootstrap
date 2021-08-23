@@ -31,7 +31,7 @@
   <script src="https://code.highcharts.com/modules/price-indicator.js"></script>
   <script src="https://code.highcharts.com/modules/full-screen.js"></script>
 
-  <title>Document</title>
+  <title>Test-Bootstrap</title>
 </head>
 
 <body>
@@ -1493,9 +1493,11 @@
       </div>
     </section>
     <hr />
-    <section>
+    <section class="mb-6">
       <header>
-        <h2 class="title-chart">Chart</h2>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+          <h2 class="title-chart">Chart</h2>
+        </div>
       </header>
       <article class="row">
      
@@ -1549,7 +1551,72 @@
         </div>
       </article>
     </section>
+
+    <section>
+      <header>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+          <h2 class="title-chart">Form</h2>
+        </div>
+      </header>
+      <div class="row">
+        <article class="col-5">
+          <form class="" id="form-test" name="formTest">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="pass">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <select class="form-select mb-3" aria-label="Default select example" name="select">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" name="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="flexCheckDefault" value="default" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="flexCheckChecked" value="checked" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Checked checkbox
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">2</label>
+            </div>
+            <div class="form-check form-check-inline mb-3">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+              <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+            </div>
+            <button type="submit" class="btn btn-primary col-12">Submit</button>
+          </form>
+        </article>
+        <article class="col-5 text-center">
+          Datos del form
+        </article>
+      </div>
+    </section>
   </main>
+  <footer>
+    <p class="text-center bg-green-dark text-white">
+      FOOTER
+    </p>
+  </footer>
 
   <script src="dist/js/jquery.min.js" charset="utf-8"></script>
   <script src="dist/js/popper.min.js" charset="utf-8"></script>
@@ -1561,6 +1628,7 @@
   <script src="js/init_popovers.js"></script>
   <script src="js/init_toasts.js"></script>
   <script src="js/init_tooltips.js"></script>
+  <script src="js/form/form_data.js"></script>
 </body>
 
 </html>
