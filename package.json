@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "db": "node src/db/db_connection.js"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +26,7 @@
     "gulp-terser": "^2.0.1",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
+    "mysql": "^2.18.1",
     "sass": "^1.36.0"
   },
   "devDependencies": {

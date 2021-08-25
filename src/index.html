@@ -31,6 +31,10 @@
   <script src="https://code.highcharts.com/modules/price-indicator.js"></script>
   <script src="https://code.highcharts.com/modules/full-screen.js"></script>
 
+
+   <!-- DATABASE -->
+   
+
   <title>Test-Bootstrap</title>
 </head>
 
@@ -1558,56 +1562,67 @@
           <h2 class="title-chart">Form</h2>
         </div>
       </header>
-      <div class="row">
+      <div class="row justify-content-between">
         <article class="col-5">
           <form class="" id="form-test" name="formTest">
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
-              <label for="floatingInput">Email address</label>
+              <input type="name" class="form-control" id="name" placeholder="name@example.com" name="name">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="lastName" class="form-control" id="lastName" placeholder="name@example.com" name="lastName">
+              <label for="lastName">Last Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email">
+              <label for="email">Email address</label>
             </div>
             <div class="form-floating mb-3">
               <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="pass">
               <label for="floatingPassword">Password</label>
             </div>
             <select class="form-select mb-3" aria-label="Default select example" name="select">
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="">Elige tu mascota</option>
+              <option value="lobo">Lobo</option>
+              <option value="cuervo">Cuervo</option>
+              <option value="oso">Oso</option>
             </select>
             <div class="form-check form-switch">
               <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" name="flexSwitchCheckChecked" checked>
-              <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+              <label class="form-check-label" for="flexSwitchCheckChecked">Disponible ?</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="flexCheckDefault" value="default" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" name="flexCheckDefault" value="Rubias" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">
-                Default checkbox
+                Rubias
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="flexCheckChecked" value="checked" id="flexCheckChecked" checked>
+              <input class="form-check-input" type="checkbox" name="flexCheckChecked" value="Morenas" id="flexCheckChecked" checked>
               <label class="form-check-label" for="flexCheckChecked">
-                Checked checkbox
+                Morenas
               </label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1">1</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="pizza">
+              <label class="form-check-label" for="inlineRadio1">Pizza</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-              <label class="form-check-label" for="inlineRadio2">2</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="pasta">
+              <label class="form-check-label" for="inlineRadio2">Pasta</label>
             </div>
             <div class="form-check form-check-inline mb-3">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-              <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="verduras">
+              <label class="form-check-label" for="inlineRadio3">Verduras</label>
             </div>
             <button type="submit" class="btn btn-primary col-12">Submit</button>
           </form>
         </article>
         <article class="col-5 text-center">
-          Datos del form
+          <h3 class="mb-4">Datos del form</h3>
+          <div class="datos">
+        
+          </div>
         </article>
       </div>
     </section>
@@ -1628,7 +1643,8 @@
   <script src="js/init_popovers.js"></script>
   <script src="js/init_toasts.js"></script>
   <script src="js/init_tooltips.js"></script>
-  <script src="js/form/form_data.js"></script>
+  <!--<script type="module" src="db/db_connection.js"></script>-->
+  <script type="module" src="js/form/form_data.js"></script>
 </body>
 
 </html>
