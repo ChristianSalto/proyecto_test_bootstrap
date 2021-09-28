@@ -153,3 +153,15 @@
 // ***********   Basic area   ***********  //
 
 
+path.highcharts-halo.highcharts-color-0 {
+    cursor: pointer;
+    transform: translate(-50px, -70px);
+    fill-opacity: 1;
+    // fill: rgb(95 176 228);
+    // d:path("M9 9 L9 50 L50 10 Z")
+}
+
+path.highcharts-halo.highcharts-color-0:hover {
+
+    fill: brown;
+}

@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="/dist/css/styles.css" />
+<div class="form__container" id="cntr-form">
+    <div class="form__popup active" id="popup">
+        <div class="form__cerrar">
+            <h3 class="text-dark mb-4 col-9">Filtrar</h3>
+            <span class="form__cerrar-popup" id="cerrar-popup">X cerrar</span>
+        </div>
+        <form action="">
+            <div class="form-group mb-4">
+                <label for="name">Nombre</label>
+                <input type="name" class="form-control" id="name" placeholder="Enter name" />
+            </div>
+            <div class="row">
+                <div class="form-group col-4 mb-4">
+                    <label for="valor">Valor</label>
+                    <select class="form-control custom-select" id="valor" name="managementCompanyName">
+                        <option value="">Selecciona</option>
+                        <option value="Aberdeen Standard Investments Luxembourg S.A.">
+                            Aberdeen Standard Investments Luxembourg S.A.
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group col-4 mb-4">
+                    <label for="fromDate">Desde</label>
+                    <input type="text" class="form-control datepicker validate-input" id="fromDate" name="fromDate" />
+                </div>
+                <div class="form-group col-4 mb-4">
+                    <label for="toDate">Hasta</label>
+                    <input type="text" class="form-control datepicker validate-input" id="toDate" name="toDate" />
+                </div>
+                <div class="form-group col-12 mb-4">
+                    <label for="toDate" class="mb-2">Operaciones</label>
+                    <div class="form__button">
+                        <input type="button" class="form__button--item active" value="Todos">
+                        <input type="button" class="form__button--item" value="Compras">
+                        <input type="button" class="form__button--item" value="Ventas">
+                        <input type="button" class="form__button--item" value="Dividendos">
+                        <input type="button" class="form__button--item" value="Ampliaciones">
+                        <input type="button" class="form__button--item" value="Cambios de titularidad">
+                    </div>
+                </div>
+            </div>
+            <div class="form__link text-center">
+                <a href="" class="text-primary">Mas opciones</a>
+            </div>
+            <div class="form-group d-flex justify-content-center">
+                <button class="col-3 btn btn-light m-4">Eliminar filtros</button>
+                <button class="col-3 btn btn-primary m-4">Aplicar filtros</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    document.querySelectorAll('.form__button--item').forEach(item => {
+        item.addEventListener('click', event => {
+            item.classList.contains('active') ? item.classList.remove('active') : item.classList.add('active');
+        })
+      })
+</script>

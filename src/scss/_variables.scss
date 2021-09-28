@@ -942,3 +942,12 @@ $tooltip-arrow-width:               .8rem;
 $tooltip-arrow-height:              .4rem;
 $tooltip-arrow-color:               $tooltip-bg;
 // scss-docs-end tooltip-variables
+
+
+// Tables
+
+$table-group-separator-color: $gray-400;
+
+$custom-select-bg-size:            			27px 31px;
+$custom-select-indicator-color:     		$gray-600;
+$custom-select-indicator:           		url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="50" height="27" viewBox="0 0 50 27"><title>chevron-down-big</title><path fill="#{$custom-select-indicator-color}" d="M27.875 4.125l-11.875 11.875-11.875-11.875-3.938 3.938 15.813 15.813 15.813-15.813z"></path></svg>');

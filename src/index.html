@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/dist/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/dist/css/styles.css" />
 
+
   <!-- HIGHCHARTS -->
 
   <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/stocktools/gui.css" />
@@ -19,7 +20,6 @@
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://code.highcharts.com/modules/export-data.js"></script>
   <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-  
 
   <!-- <script src="https://code.highcharts.com/stock/highstock.js"></script> -->
   <script src="https://code.highcharts.com/stock/modules/data.js"></script>
@@ -31,9 +31,7 @@
   <script src="https://code.highcharts.com/modules/price-indicator.js"></script>
   <script src="https://code.highcharts.com/modules/full-screen.js"></script>
 
-
-   <!-- DATABASE -->
-   
+  <!-- DATABASE -->
 
   <title>Test-Bootstrap</title>
 </head>
@@ -98,8 +96,6 @@
               href="#list-toasts" role="tab" aria-controls="list-navbar">Toasts</a>
             <a class="list-group-item list-group-item-action" id="list-tooltips-list" data-bs-toggle="list"
               href="#list-tooltips" role="tab" aria-controls="list-navbar">Tooltips</a>
-
-
           </div>
         </div>
         <div class="col-9 tabs p-5">
@@ -1490,8 +1486,6 @@
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
@@ -1504,10 +1498,10 @@
         </div>
       </header>
       <article class="row">
-     
         <div class="col-8">
           <div class="tab-content m-4" id="">
-            <div class="tab-pane fade show active" id="pills-basicLine" role="tabpanel" aria-labelledby="pills-basicLine-tab">
+            <div class="tab-pane fade show active" id="pills-basicLine" role="tabpanel"
+              aria-labelledby="pills-basicLine-tab">
               <div class="cnt-chart">
                 <div id="basic-line" class="chart"></div>
               </div>
@@ -1524,22 +1518,29 @@
                 <div id="basic-bar" class="chart"></div>
               </div>
             </div>
-            
+
+            <div class="tab-pane fade show" id="pills-semiCircle" role="tabpanel"
+              aria-labelledby="pills-semiCircle-tab">
+              <div class="cnt-chart">
+                <div id="semi-circle" class="chart"></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-4">
           <nav class="d-flex justify-content-center">
-
             <ul class="nav flex-column nav-pills mt-5" id="" role="tablist">
               <li class="nav-item mb-3" role="presentation">
-                <button class="nav-link active" id="pills-basicLine-tab" data-bs-toggle="pill" data-bs-target="#pills-basicLine"
-                  type="button" role="tab" aria-controls="pills-basicLine" aria-selected="true">
+                <button class="nav-link active" id="pills-basicLine-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-basicLine" type="button" role="tab" aria-controls="pills-basicLine"
+                  aria-selected="true">
                   Basic Line
                 </button>
               </li>
               <li class="nav-item mb-3" role="presentation">
-                <button class="nav-link" id="pills-basicArea-tab" data-bs-toggle="pill" data-bs-target="#pills-basicArea"
-                  type="button" role="tab" aria-controls="pills-basicArea" aria-selected="true">
+                <button class="nav-link" id="pills-basicArea-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-basicArea" type="button" role="tab" aria-controls="pills-basicArea"
+                  aria-selected="true">
                   Basic area
                 </button>
               </li>
@@ -1549,8 +1550,14 @@
                   Basic bar
                 </button>
               </li>
+              <li class="nav-item mb-3" role="presentation">
+                <button class="nav-link" id="pills-semiCircle-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-semiCircle" type="button" role="tab" aria-controls="pills-semiCircle"
+                  aria-selected="true">
+                  Semi Circle
+                </button>
+              </li>
             </ul>
-        
           </nav>
         </div>
       </article>
@@ -1566,19 +1573,20 @@
         <article class="col-5">
           <form class="" id="form-test" name="formTest">
             <div class="form-floating mb-3">
-              <input type="name" class="form-control" id="name" placeholder="name@example.com" name="name">
+              <input type="name" class="form-control" id="name" placeholder="name@example.com" name="name" />
               <label for="floatingInput">Name</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="lastName" class="form-control" id="lastName" placeholder="name@example.com" name="lastName">
+              <input type="lastName" class="form-control" id="lastName" placeholder="name@example.com"
+                name="lastName" />
               <label for="lastName">Last Name</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email">
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" />
               <label for="email">Email address</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="pass">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="pass" />
               <label for="floatingPassword">Password</label>
             </div>
             <select class="form-select mb-3" aria-label="Default select example" name="select">
@@ -1588,49 +1596,154 @@
               <option value="oso">Oso</option>
             </select>
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" name="flexSwitchCheckChecked" checked>
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" name="flexSwitchCheckChecked"
+                checked />
               <label class="form-check-label" for="flexSwitchCheckChecked">Disponible ?</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="flexCheckDefault" value="Rubias" id="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" name="flexCheckDefault" value="Rubias"
+                id="flexCheckDefault" />
               <label class="form-check-label" for="flexCheckDefault">
                 Rubias
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="flexCheckChecked" value="Morenas" id="flexCheckChecked" checked>
+              <input class="form-check-input" type="checkbox" name="flexCheckChecked" value="Morenas"
+                id="flexCheckChecked" checked />
               <label class="form-check-label" for="flexCheckChecked">
                 Morenas
               </label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="pizza">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="pizza" />
               <label class="form-check-label" for="inlineRadio1">Pizza</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="pasta">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="pasta" />
               <label class="form-check-label" for="inlineRadio2">Pasta</label>
             </div>
             <div class="form-check form-check-inline mb-3">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="verduras">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                value="verduras" />
               <label class="form-check-label" for="inlineRadio3">Verduras</label>
             </div>
-            <button type="submit" class="btn btn-primary col-12">Submit</button>
+            <button type="submit" class="btn btn-primary col-12">
+              Submit
+            </button>
           </form>
         </article>
         <article class="col-5 text-center">
           <h3 class="mb-4">Datos del form</h3>
-          <div class="datos">
-        
-          </div>
+          <div class="datos"></div>
         </article>
       </div>
     </section>
+    <section>
+      <header>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+          <h2 class="title-chart">Table</h2>
+        </div>
+      </header>
+      <article>
+        <div class="d-flex justify-content-between">
+          <p>10 movimientos</p>
+          <div class="d-flex align-items-baseline">
+            <a href="" id="btn-filter">
+              <span class="icon-equalizer"></span>
+            </a>
+            <p class="text-primary">Filter</p>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Valor</th>
+                <th>Operacion</th>
+                <th>Total titulos</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Estado</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!--  
+              <tr>
+                <td>Apple ING.</td>
+                <td>Compra</td>
+                <td>1000</td>
+                <td>10/12/2020</td>
+                <td>20:40</td>
+                <td>pendiente</td>
+                <td>190 EUR</td>
+                <td>
+                  <a href="">Mas info</a>
+                </td>
+              </tr>
+              -->
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <article>
+        <div class="form__container" id="cntr-form">
+          <div class="form__popup" id="popup">
+            <div class="form__cerrar">
+              <h3 class="text-dark mb-4 col-9">Filtrar</h3>
+              <span class="form__cerrar-popup" id="cerrar-popup">X cerrar</span>
+            </div>
+            <form action="">
+              <div class="form-group mb-4">
+                <label for="name">Nombre</label>
+                <input type="name" class="form-control" id="name" placeholder="Enter name" />
+              </div>
+              <div class="row">
+                <div class="form-group col-4 mb-4">
+                  <label for="valor">Valor</label>
+                  <select class="form-control custom-select" id="valor" name="managementCompanyName">
+                    <option value="">Selecciona</option>
+                    <option value="Aberdeen Standard Investments Luxembourg S.A.">
+                      Aberdeen Standard Investments Luxembourg S.A.
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group col-4 mb-4">
+                  <label for="fromDate">Desde</label>
+                  <input type="text" class="form-control datepicker validate-input" id="fromDate" name="fromDate" />
+                </div>
+                <div class="form-group col-4 mb-4">
+                  <label for="toDate">Hasta</label>
+                  <input type="text" class="form-control datepicker validate-input" id="toDate" name="toDate" />
+                </div>
+                <div class="form-group col-12 mb-4">
+                  <label for="toDate" class="mb-2">Operaciones</label>
+                  <div class="form__button">
+                    <input type="button" class="form__button--item active" value="Todos">
+                    <input type="button" class="form__button--item" value="Compras">
+                    <input type="button" class="form__button--item" value="Ventas">
+                    <input type="button" class="form__button--item" value="Dividendos">
+                    <input type="button" class="form__button--item" value="Ampliaciones">
+                    <input type="button" class="form__button--item" value="Cambios de titularidad">
+                  </div>
+                </div>
+              </div>
+              <div class="form__link text-center">
+                <a href="" class="text-primary">Mas opciones</a>
+              </div>
+              <div class="form-group d-flex justify-content-center">
+                <button class="col-3 btn btn-light m-4">Eliminar filtros</button>
+                <button class="col-3 btn btn-primary m-4">Aplicar filtros</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </article>
+    </section>
   </main>
   <footer>
-    <p class="text-center bg-green-dark text-white">
-      FOOTER
-    </p>
+    <p class="text-center bg-green-dark text-white">FOOTER</p>
   </footer>
 
   <script src="dist/js/jquery.min.js" charset="utf-8"></script>
@@ -1640,18 +1753,19 @@
   <script src="js/chart/basic_line.js"></script>
   <script src="js/chart/basic_area.js"></script>
   <script src="js/chart/basic_bar.js"></script>
+  <script src="js/chart/semi_circle.js"></script>
   <script src="js/init_popovers.js"></script>
   <script src="js/init_toasts.js"></script>
   <script src="js/init_tooltips.js"></script>
+  <script src="js/table/table.js"></script>
+  <script src="js/info/info.js"></script>
   <!--<script type="module" src="db/db_connection.js"></script>-->
-  <script type="module" src="js/form/form_data.js"></script>
+  <script type="module" src="js/form/form.js"></script>
 </body>
 
 </html>
 
-
-
- <!--
+<!--
               
               
                 <div class="cnt-chart">

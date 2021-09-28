@@ -1,0 +1,85 @@
+.table {
+  thead {
+    border-bottom: .2rem solid $gray-400;
+    th {
+      padding: 1rem;
+      font-size: 0.7857142857142857rem;
+      //border-bottom: 2px solid rgba(149,149,149,0.1);
+    }
+  }
+  tbody {
+    td {
+      padding: 1rem;
+      font-size: 0.9285714285714286rem;
+    }
+    tr {
+        border-bottom: .2rem solid $gray-400;
+    }
+  }
+
+  th,
+  td {
+    vertical-align: middle;
+    //    border-top: 1px solid rgba(149,149,149,0.1);
+    p {
+      text-align: left;
+    }
+  }
+
+  &__link {
+    color: $primary;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:visited {
+    //   color: $gray-600;
+    }
+  }
+}
+
+
+
+
+//     &__number {
+//        padding: 0.313rem;
+//     }
+
+//     &__buttons {
+//        display: grid;
+//        grid-template-columns: 1fr;
+//        grid-gap: .5rem;
+//        .btn {
+//           white-space: nowrap;
+//        }
+//     }
+
+//     &__btn {
+//        white-space: nowrap;
+//        display: flex;
+//        flex-direction: column;
+//     }
+
+//     &__form {
+//        display: flex;
+//        justify-content: space-between;
+// 	   align-items: flex-start;
+//        input {
+//           margin-top: 0.3rem;
+//        }
+//     }
+
+//     &__data {
+//        margin-left: .5rem;
+//     }
+
+//     &__comp {
+//        th, td {
+//           width: 25%;
+//        }
+//     }
+//  }
+
+//  caption {
+//     padding: 0;
+//  }
